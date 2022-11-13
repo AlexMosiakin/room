@@ -1,4 +1,5 @@
 {
+  "homepage": "https://alexmosiakin.github.io/room/",
   "name": "room",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "events": "^3.3.0",
@@ -16,6 +19,7 @@
   },
   "dependencies": {
     "@ashthornton/asscroll": "^2.0.11",
+    "gh-pages": "^4.0.0",
     "lil-gui": "^0.17.0"
   }
 }
